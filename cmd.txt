@@ -14,3 +14,7 @@ docker rm `d1`
 # start
 docker start `d1`
 
+# attach
+docker attach `d1`
+ctrl-p + ctrl-q
+docker commit -m "gem install bundler" `d1` yoosato/centos
