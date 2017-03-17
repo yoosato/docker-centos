@@ -1,0 +1,16 @@
+# build
+docker build -t  yoosato/centos .
+
+# run
+winpty docker run -i -t --name myCentos yoosato/centos
+
+# id
+alias d1='docker ps -l -q'
+
+# rm 
+docker stop `d1`
+docker rm `d1`
+
+# start
+docker start `d1`
+
